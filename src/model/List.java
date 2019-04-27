@@ -11,9 +11,9 @@ public class List {
 		if(first == null) {
 			first = al.first;
 		} else {
-			Node auxiliar = new Node(first.getNumber()-1);
-			auxiliar.setNext(first);
-			first = auxiliar;
+			Node auxiliary = new Node(first.getNumber()-1);
+			auxiliary.setNext(first);
+			first = auxiliary;
 
 			Node menorAct = first;
 			Node mayorAct = first.getNext();
@@ -43,7 +43,7 @@ public class List {
 					mayorAct = mayorAct.getNext();
 				}
 			}
-			first = first.getNext();   //delete auxiliar
+			first = first.getNext();   //delete auxiliary
 		}
 	}
 	
